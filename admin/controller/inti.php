@@ -3,10 +3,16 @@ $con->auth();
 $conn=$con->koneksi();
 switch(@$_GET['page']){
     case 'add';
+<<<<<<< HEAD
         $sql="SELECT* FROM jenis_barang";
         $barang=$conn->query($sql);
         $sql="SELECT* FROM pemasok";
         $pemasok=$conn->query($sql);
+=======
+        $sql="SELECT* FROM `barang` INNER JOIN jenis_barang ON barang.`id_jenis`=jenis_barang.`id_jenis`
+        INNER JOIN pemasok ON barang.`id_pemasok`=pemasok.`id_pemasok`;";
+        $barang=$conn->query($sql);
+>>>>>>> 3a94d7a301e958389c9909830debcf96b3c0ebc6
         $content="views/inti/tambah.php";
         include_once 'views/template.php';
     break;
@@ -123,10 +129,16 @@ switch(@$_GET['page']){
         $_POST['nama_barang']=$_POST['nama_barang'];
         $_POST['id_barang']=md5($_POST['id_barang']);
         //var_dump($penyedia);
+<<<<<<< HEAD
         $sql="SELECT* FROM jenis_barang";
         $barang=$conn->query($sql);
         $sql="SELECT* FROM pemasok";
         $pemasok=$conn->query($sql);
+=======
+        $sql="SELECT* FROM barang INNER JOIN jenis_barang ON barang.`id_jenis`=jenis_barang.`id_jenis`
+        INNER JOIN pemasok ON barang.`id_pemasok`=pemasok.`id_pemasok`;";
+        $barang=$conn->query($sql);
+>>>>>>> 3a94d7a301e958389c9909830debcf96b3c0ebc6
         $content="views/inti/tambah.php";
         include_once 'views/template.php';
     break;

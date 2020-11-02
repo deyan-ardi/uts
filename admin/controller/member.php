@@ -111,10 +111,17 @@ switch(@$_GET['page']){
         }
     break;
     case 'edit';
+<<<<<<< HEAD
         $user ="SELECT* FROM member where md5(id_member)='$_GET[id]'";
         $user=$conn->query($user);
         $_POST=$user->fetch_assoc();
         $_POST['nama_member']=$_POST['nama_member'];
+=======
+        $user ="SELECT* FROM pemasok where md5(id_member)='$_GET[id]'";
+        $user=$conn->query($user);
+        $_POST=$user->fetch_assoc();
+        $_POST['nama_member']=$_POST['nama'];
+>>>>>>> 3a94d7a301e958389c9909830debcf96b3c0ebc6
         $_POST['id_member']=md5($_POST['id_member']);
         //var_dump($penyedia);
         $sql="SELECT* FROM member";

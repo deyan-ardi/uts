@@ -25,8 +25,13 @@
                     <tr>
                         <td><?=$no;?></td><td><?=$row['nama_member']?></td><td><?=$row['no_hp'];?></td><td><?=$row['alamat']?></td>                 
                         <td>
+<<<<<<< HEAD
                             <a href="index.php?mod=member&page=edit&id=<?=md5($row['id_member'])?>"><i class="fa fa-pencil"></i> </a>
                             <a href="index.php?mod=member&page=delete&id=<?=md5($row['id_member'])?>" onclick="javascript: return confirm('Hapus data?')"><i class="fa fa-trash"></i> </a>
+=======
+                            <a href="index.php?mod=user&page=edit&id=<?=md5($row['id_member'])?>"><i class="fa fa-pencil"></i> </a>
+                            <a href="index.php?mod=user&page=delete&id=<?=md5($row['id_member'])?>"><i class="fa fa-trash"></i> </a>
+>>>>>>> 3a94d7a301e958389c9909830debcf96b3c0ebc6
                         </td>
                     </tr>
                <?php $no++; }
