@@ -15,11 +15,7 @@
 <body>
 
     <div class="container "style="background:rgba(0,0,0,0.10);">
-<<<<<<< HEAD
         <nav class="navbar navbar-default" style="margin: 0px;">
-=======
-        <nav class="navbar navbar-default" style="background-image: url('../assets/bg.png'); margin: 0px;">
->>>>>>> 3a94d7a301e958389c9909830debcf96b3c0ebc6
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">

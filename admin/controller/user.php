@@ -114,11 +114,7 @@ switch(@$_GET['page']){
         $user ="SELECT* FROM pemasok where md5(id_pemasok)='$_GET[id]'";
         $user=$conn->query($user);
         $_POST=$user->fetch_assoc();
-<<<<<<< HEAD
         $_POST['nama_pemasok']=$_POST['nama_pemasok'];
-=======
-        $_POST['nama_pemasok']=$_POST['nama'];
->>>>>>> 3a94d7a301e958389c9909830debcf96b3c0ebc6
         $_POST['id_pemasok']=md5($_POST['id_pemasok']);
         //var_dump($penyedia);
         $sql="SELECT* FROM pemasok";

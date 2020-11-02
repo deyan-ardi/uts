@@ -30,13 +30,8 @@
         <label for="">Pemasok</label>
         <select name="id_pemasok" class="form-control" required id="">
             <option value="">Pilih Pemasok</option>
-<<<<<<< HEAD
             <?php if($pemasok != NULL){
                 foreach($pemasok as $row){?>
-=======
-            <?php if($barang != NULL){
-                foreach($barang as $row){?>
->>>>>>> 3a94d7a301e958389c9909830debcf96b3c0ebc6
                     <option <?=(isset($_POST['id_pemasok']) && $_POST['id_pemasok']==$row['id_pemasok'])?"selected":'';?> value="<?=$row['id_pemasok'];?>"> <?=$row['nama_pemasok'];?></option>
                 <?php }
             }?>
@@ -50,11 +45,7 @@
             <span class="text-danger"><?=(isset($err['fileToUpload']))?$err['fileToUpload']:'';?></span>
     </div>
     <div class="form-group">
-<<<<<<< HEAD
         <button type="submit" class="btn btn-primary" onclick="javascript: return confirm('Simpan data?')">Simpan</button>
-=======
-        <button type="submit" class="btn btn-primary">Simpan</button>
->>>>>>> 3a94d7a301e958389c9909830debcf96b3c0ebc6
     </div>
     </div>
 </form>

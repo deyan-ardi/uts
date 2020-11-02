@@ -26,11 +26,7 @@
             <span class="text-danger"><?=(isset($err['fileToUpload']))?$err['fileToUpload']:'';?></span>
     </div>
     <div class="form-group">
-<<<<<<< HEAD
         <button type="submit" class="btn btn-primary" onclick="javascript: return confirm('Simpan data?')">Simpan</button>
-=======
-        <button type="submit" class="btn btn-primary">Simpan</button>
->>>>>>> 3a94d7a301e958389c9909830debcf96b3c0ebc6
     </div>
     </div>
 </form>
