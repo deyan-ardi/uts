@@ -1,26 +1,24 @@
-<?php 
+<?php
 include_once '../config/Config.php';
 $con = new Config();
-if($con->auth()){
+if ($con->auth()) {
     //panggil fungsi
-    switch (@$_GET['mod']){
-        case 'inti':
-            include_once 'controller/inti.php';
+    switch (@$_GET['id']) {
+        case 'pegawai':
+            include_once 'controller/pegawai.php';
             break;
-        case 'user':
-            include_once 'controller/user.php';
+        case 'gaji':
+            include_once 'controller/gaji.php';
             break;
-        case 'member':
-            include_once 'controller/member.php';
+        case 'password':
+            include_once 'controller/password.php';
             break;
-        case 'trans':
-            include_once 'controller/trans.php';
+        case 'detail_gaji':
+            include_once 'controller/detail_gaji.php';
             break;
         default:
-        include_once 'controller/beranda.php';
+            include_once 'controller/beranda.php';
     }
-}else{
-    //panggil cont login
+} else {
     include_once 'controller/login.php';
 }
-?>

@@ -1,40 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <title>Login</title>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../assets/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../assets/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>UD SUMBER HASIL - Login Admin</title>
 </head>
+
 <body>
-    <div class="container ">
-        <nav class="navbar navbar-default" style=" margin: 0px;"></nav>
-        <div class="content center" >
-            <hr>
-            <div class="box">
-            <h1>Login</h1>
+
+    <div class="container padding-top col-lg-4 col-sm-6">
+        <div class="kotak">
+            <?= (isset($msg)) ? $msg : '' ?>
+        </div>
+        <div class="card ">
+            <h5 class="card-header">Login Administrator</h5>
+            <div class="card-body">
                 <form action="" method="POST">
                     <div class="form-group">
-                        <label for="email">Email address:</label>
-                        <input type="email" name="email" class="form-control" >
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" name="email" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Password:</label>
-                        <input type="password"  name="password" class="form-control" >
-                        <span><?=(isset($msg))?$msg: '' ?></span>
-                        
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" name="passwd" id="exampleInputPassword1">
                     </div>
-                    <div class="form-group pull-right">
-                        <button type="submit" class="btn btn-default">Login</button>
-                    </div>
+                    <button type="submit" class="btn btn-primary" value="SUBMIT" name="submit">Login</button>
                 </form>
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
 </body>
-</html>
 
+</html>
