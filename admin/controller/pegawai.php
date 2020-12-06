@@ -62,7 +62,7 @@ switch (@$_GET['page']) {
 
                                             if ($conn->query($in_sql) === true) {
                                                 move_uploaded_file($tmpfoto, $target_foto);
-                                                header('location: http://localhost/uts/admin/index.php');
+                                                header('location: http://localhost/uts/admin/index.php?id=pegawai');
                                                 exit;
                                             } else {
                                                 var_dump($conn->query($in_sql));
